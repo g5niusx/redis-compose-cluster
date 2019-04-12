@@ -1,0 +1,135 @@
+
+# redis-cli -a redis --cluster create 37.220.83.153:6379 37.220.83.153:6380 37.220.83.153:6381 37.220.83.153:6382 37.220.83.153:6383 37.220.83.153:6384 --cluster-replicas 1
+version: '3'
+services:
+  # 节点1
+  redis1:
+    # 启动之后的容器名称
+    container_name: redis-node-1
+    env_file: 
+      # 环境配置
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    ports:
+      - ${redis1_ports}
+      - ${redis1_cluster}
+    volumes:
+      # 容器的data映射到宿主机
+      - /Users/g5niusx/Soft/docker/redis/node-${redis1_port}/data:/data
+      # 加载配置文件
+      - /Users/g5niusx/Soft/docker/redis/node-${redis1_port}/redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment: 
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点2
+  redis2:
+    container_name: redis-node-2
+    env_file: 
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    ports:
+      - ${redis2_ports}
+      - ${redis2_cluster}
+    volumes:
+      # 容器的data映射到宿主机
+      - /Users/g5niusx/Soft/docker/redis/node-${redis2_port}/data:/data
+      # 加载配置文件
+      - /Users/g5niusx/Soft/docker/redis/node-${redis2_port}/redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件  
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment: 
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点3
+  redis3:
+    container_name: redis-node-3
+    env_file:
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    ports:
+      - ${redis3_ports}
+      - ${redis3_cluster}
+    volumes:
+      # 容器的data映射到宿主机
+      - /Users/g5niusx/Soft/docker/redis/node-${redis3_port}/data:/data
+      # 加载配置文件
+      - /Users/g5niusx/Soft/docker/redis/node-${redis3_port}/redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点4
+  redis4:
+    container_name: redis-node-4
+    env_file:
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    ports:
+      - ${redis4_ports}
+      - ${redis4_cluster}
+    volumes:
+      # 容器的data映射到宿主机
+      - /Users/g5niusx/Soft/docker/redis/node-${redis4_port}/data:/data
+      # 加载配置文件
+      - /Users/g5niusx/Soft/docker/redis/node-${redis4_port}/redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点5
+  redis5:
+    container_name: redis-node-5
+    env_file:
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    ports:
+      - ${redis5_ports}
+      - ${redis5_cluster}
+    volumes:
+      # 容器的data映射到宿主机
+      - /Users/g5niusx/Soft/docker/redis/node-${redis5_port}/data:/data
+      # 加载配置文件
+      - /Users/g5niusx/Soft/docker/redis/node-${redis5_port}/redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+  # 节点6
+  redis6:
+    container_name: redis-node-6
+    env_file:
+      - ./.env
+    # 使用哪种镜像
+    image: 'redis:5.0.4'
+    # 端口映射
+    ports:
+      - ${redis6_ports}
+      - ${redis6_cluster}
+    volumes:
+      # 容器的data映射到宿主机
+      - /Users/g5niusx/Soft/docker/redis/node-${redis6_port}/data:/data
+      # 加载配置文件
+      - /Users/g5niusx/Soft/docker/redis/node-${redis6_port}/redis.conf:/usr/local/etc/redis/redis.conf
+    # 启动redis的时候指定配置文件
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+networks:
+  front:
+    driver: host

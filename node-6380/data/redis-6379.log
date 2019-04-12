@@ -1,0 +1,33 @@
+1:C 12 Apr 2019 20:20:05.290 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 12 Apr 2019 20:20:05.293 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 12 Apr 2019 20:20:05.295 # Configuration loaded
+1:M 12 Apr 2019 20:20:05.303 * No cluster configuration found, I'm 4c6b38eb4181a0e102f330a441cea6d5c8a2e757
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 12 Apr 2019 20:20:05.312 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 12 Apr 2019 20:20:05.319 # Server initialized
+1:M 12 Apr 2019 20:20:05.322 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 12 Apr 2019 20:20:05.331 * Ready to accept connections
+1:signal-handler (1555071614) Received SIGTERM scheduling shutdown...
+1:M 12 Apr 2019 20:20:14.573 # User requested shutdown...
+1:M 12 Apr 2019 20:20:14.576 * Calling fsync() on the AOF file.
+1:M 12 Apr 2019 20:20:14.578 * Saving the final RDB snapshot before exiting.
+1:M 12 Apr 2019 20:20:14.583 * DB saved on disk
+1:M 12 Apr 2019 20:20:14.585 * Removing the pid file.
+1:M 12 Apr 2019 20:20:14.587 # Redis is now ready to exit, bye bye...
