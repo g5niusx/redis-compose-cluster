@@ -130,6 +130,4 @@ services:
     environment:
       # 设置时区为上海，否则时间会有问题
       - TZ=Asia/Shanghai
-networks:
-  front:
-    driver: host
+    network_mode: host
