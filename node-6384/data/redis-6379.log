@@ -1,0 +1,50 @@
+1:C 13 Apr 2019 02:06:58.760 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 13 Apr 2019 02:06:58.762 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 13 Apr 2019 02:06:58.764 # Configuration loaded
+1:M 13 Apr 2019 02:06:58.772 * No cluster configuration found, I'm ebf1e481e566b29699ff35bd2934fd4fb257e8c5
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 13 Apr 2019 02:06:58.783 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 13 Apr 2019 02:06:58.784 # Server initialized
+1:M 13 Apr 2019 02:06:58.786 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 13 Apr 2019 02:06:58.789 * Ready to accept connections
+1:M 13 Apr 2019 02:07:21.938 # configEpoch set to 6 via CLUSTER SET-CONFIG-EPOCH
+1:M 13 Apr 2019 02:07:22.059 # IP address for this node updated to 172.16.238.16
+1:M 13 Apr 2019 02:07:27.078 # Cluster state changed: ok
+1:S 13 Apr 2019 02:07:27.987 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 13 Apr 2019 02:07:28.194 * Connecting to MASTER 172.16.238.12:6379
+1:S 13 Apr 2019 02:07:28.197 * MASTER <-> REPLICA sync started
+1:S 13 Apr 2019 02:07:28.200 * Non blocking connect for SYNC fired the event.
+1:S 13 Apr 2019 02:07:28.202 * Master replied to PING, replication can continue...
+1:S 13 Apr 2019 02:07:28.204 * Trying a partial resynchronization (request 9cec3768fa1609638ba91df016698dbe28dcb995:1).
+1:S 13 Apr 2019 02:07:28.214 * Full resync from master: bc5286e5f93b03e451a96af762bdc12370aa99ad:0
+1:S 13 Apr 2019 02:07:28.215 * Discarding previously cached master state.
+1:S 13 Apr 2019 02:07:28.299 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 13 Apr 2019 02:07:28.303 * MASTER <-> REPLICA sync: Flushing old data
+1:S 13 Apr 2019 02:07:28.305 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 13 Apr 2019 02:07:28.308 * MASTER <-> REPLICA sync: Finished with success
+1:S 13 Apr 2019 02:07:28.311 * Background append only file rewriting started by pid 19
+1:S 13 Apr 2019 02:07:28.345 * AOF rewrite child asks to stop sending diffs.
+19:C 13 Apr 2019 02:07:28.347 * Parent agreed to stop sending diffs. Finalizing AOF...
+19:C 13 Apr 2019 02:07:28.349 * Concatenating 0.00 MB of AOF diff received from parent.
+19:C 13 Apr 2019 02:07:28.352 * SYNC append only file rewrite performed
+19:C 13 Apr 2019 02:07:28.354 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 13 Apr 2019 02:07:28.403 * Background AOF rewrite terminated with success
+1:S 13 Apr 2019 02:07:28.405 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 13 Apr 2019 02:07:28.408 * Background AOF rewrite finished successfully

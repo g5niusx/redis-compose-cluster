@@ -1,6 +1,6 @@
 
-# redis-cli -a redis --cluster create 127.0.0.1:6379 redis2:6380 redis3:6381 redis4:6382 redis5:6383 redis6:6384 --cluster-replicas 1
-version: '3'
+# redis-cli -a redis --cluster create 172.16.238.11:6379 172.16.238.12:6379 172.16.238.13:6379 172.16.238.14:6379 172.16.238.15:6379 172.16.238.16:6379 --cluster-replicas 1
+version: '3.3'
 services:
   # 节点1
   redis1:
@@ -16,7 +16,8 @@ services:
       - ${redis1_ports}
       - ${redis1_cluster}
     networks:
-      - cluster-net
+        cluster-net:
+          ipv4_address: 172.16.238.11
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis1_port}/data:/data
@@ -39,7 +40,8 @@ services:
       - ${redis2_ports}
       - ${redis2_cluster}
     networks:
-      - cluster-net
+        cluster-net:
+          ipv4_address: 172.16.238.12
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis2_port}/data:/data
@@ -62,7 +64,8 @@ services:
       - ${redis3_ports}
       - ${redis3_cluster}
     networks:
-      - cluster-net
+        cluster-net:
+          ipv4_address: 172.16.238.13
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis3_port}/data:/data
@@ -85,7 +88,8 @@ services:
       - ${redis4_ports}
       - ${redis4_cluster}
     networks:
-      - cluster-net
+        cluster-net:
+          ipv4_address: 172.16.238.14
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis4_port}/data:/data
@@ -108,7 +112,8 @@ services:
       - ${redis5_ports}
       - ${redis5_cluster}
     networks:
-      - cluster-net
+        cluster-net:
+          ipv4_address: 172.16.238.15
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis5_port}/data:/data
@@ -131,7 +136,8 @@ services:
       - ${redis6_ports}
       - ${redis6_cluster}
     networks:
-      - cluster-net
+        cluster-net:
+          ipv4_address: 172.16.238.16
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis6_port}/data:/data
@@ -143,5 +149,8 @@ services:
       # 设置时区为上海，否则时间会有问题
       - TZ=Asia/Shanghai
 networks:
+  # 创建集群网络，在容器之间通信
   cluster-net:
-    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.238.0/24

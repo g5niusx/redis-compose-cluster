@@ -1,0 +1,123 @@
+1:C 13 Apr 2019 01:02:40.532 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 13 Apr 2019 01:02:40.535 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 13 Apr 2019 01:02:40.537 # Configuration loaded
+1:M 13 Apr 2019 01:02:40.553 * No cluster configuration found, I'm 75a447416104674001ef9194825f439297f0cfbe
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 13 Apr 2019 01:02:40.561 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 13 Apr 2019 01:02:40.563 # Server initialized
+1:M 13 Apr 2019 01:02:40.565 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 13 Apr 2019 01:02:40.569 * Ready to accept connections
+1:M 13 Apr 2019 01:02:54.439 # configEpoch set to 3 via CLUSTER SET-CONFIG-EPOCH
+1:M 13 Apr 2019 01:02:54.528 # IP address for this node updated to 172.16.238.13
+1:M 13 Apr 2019 01:02:59.478 # Cluster state changed: ok
+1:M 13 Apr 2019 01:03:00.323 * Replica 172.16.238.14:6379 asks for synchronization
+1:M 13 Apr 2019 01:03:00.324 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'c111fdda1a0b6e106d0c857f5051e4462b4a23ac', my replication IDs are '9ad21a9c873cb846d5803ce78030b41e5bcc42ba' and '0000000000000000000000000000000000000000')
+1:M 13 Apr 2019 01:03:00.325 * Starting BGSAVE for SYNC with target: disk
+1:M 13 Apr 2019 01:03:00.327 * Background saving started by pid 18
+18:C 13 Apr 2019 01:03:00.330 * DB saved on disk
+18:C 13 Apr 2019 01:03:00.332 * RDB: 0 MB of memory used by copy-on-write
+1:M 13 Apr 2019 01:03:00.394 * Background saving terminated with success
+1:M 13 Apr 2019 01:03:00.400 * Synchronization with replica 172.16.238.14:6379 succeeded
+1:signal-handler (1555092030) Received SIGTERM scheduling shutdown...
+1:M 13 Apr 2019 02:00:30.292 # User requested shutdown...
+1:M 13 Apr 2019 02:00:30.299 * Calling fsync() on the AOF file.
+1:M 13 Apr 2019 02:00:30.304 * Saving the final RDB snapshot before exiting.
+1:M 13 Apr 2019 02:00:30.319 * DB saved on disk
+1:M 13 Apr 2019 02:00:30.322 * Removing the pid file.
+1:M 13 Apr 2019 02:00:30.326 # Redis is now ready to exit, bye bye...
+1:C 13 Apr 2019 02:00:42.426 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 13 Apr 2019 02:00:42.427 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 13 Apr 2019 02:00:42.429 # Configuration loaded
+1:M 13 Apr 2019 02:00:42.435 * Node configuration loaded, I'm 75a447416104674001ef9194825f439297f0cfbe
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 13 Apr 2019 02:00:42.452 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 13 Apr 2019 02:00:42.454 # Server initialized
+1:M 13 Apr 2019 02:00:42.462 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 13 Apr 2019 02:00:42.467 * Ready to accept connections
+1:M 13 Apr 2019 02:00:42.770 * Replica 172.16.238.14:6379 asks for synchronization
+1:M 13 Apr 2019 02:00:42.772 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '10e6111e9af060e7169fe207ee399f84949d776d', my replication IDs are '25ca1e6c1fad5b36f82a99284994e20676693c9d' and '0000000000000000000000000000000000000000')
+1:M 13 Apr 2019 02:00:42.774 * Starting BGSAVE for SYNC with target: disk
+1:M 13 Apr 2019 02:00:42.776 * Background saving started by pid 18
+18:C 13 Apr 2019 02:00:42.780 * DB saved on disk
+18:C 13 Apr 2019 02:00:42.782 * RDB: 0 MB of memory used by copy-on-write
+1:M 13 Apr 2019 02:00:42.882 * Background saving terminated with success
+1:M 13 Apr 2019 02:00:42.889 * Synchronization with replica 172.16.238.14:6379 succeeded
+1:M 13 Apr 2019 02:00:44.515 # Cluster state changed: ok
+1:signal-handler (1555092367) Received SIGTERM scheduling shutdown...
+1:M 13 Apr 2019 02:06:07.501 # User requested shutdown...
+1:M 13 Apr 2019 02:06:07.503 * Calling fsync() on the AOF file.
+1:M 13 Apr 2019 02:06:07.505 * Saving the final RDB snapshot before exiting.
+1:M 13 Apr 2019 02:06:07.509 * DB saved on disk
+1:M 13 Apr 2019 02:06:07.511 * Removing the pid file.
+1:M 13 Apr 2019 02:06:07.512 # Redis is now ready to exit, bye bye...
+1:C 13 Apr 2019 02:06:59.450 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 13 Apr 2019 02:06:59.453 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 13 Apr 2019 02:06:59.455 # Configuration loaded
+1:M 13 Apr 2019 02:06:59.463 * No cluster configuration found, I'm 2663045d703eb1f6a38c6282de34114a8de38423
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 13 Apr 2019 02:06:59.470 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 13 Apr 2019 02:06:59.472 # Server initialized
+1:M 13 Apr 2019 02:06:59.474 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 13 Apr 2019 02:06:59.478 * Ready to accept connections
+1:M 13 Apr 2019 02:07:21.925 # configEpoch set to 3 via CLUSTER SET-CONFIG-EPOCH
+1:M 13 Apr 2019 02:07:22.059 # IP address for this node updated to 172.16.238.13
+1:M 13 Apr 2019 02:07:26.975 # Cluster state changed: ok
+1:M 13 Apr 2019 02:07:28.408 * Replica 172.16.238.14:6379 asks for synchronization
+1:M 13 Apr 2019 02:07:28.410 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '9351bb3a109182f945cf8f292ead99c65aefe492', my replication IDs are '465ce05525012d89d9727561ed6b90f1927908b7' and '0000000000000000000000000000000000000000')
+1:M 13 Apr 2019 02:07:28.412 * Starting BGSAVE for SYNC with target: disk
+1:M 13 Apr 2019 02:07:28.414 * Background saving started by pid 25
+25:C 13 Apr 2019 02:07:28.417 * DB saved on disk
+25:C 13 Apr 2019 02:07:28.419 * RDB: 0 MB of memory used by copy-on-write
+1:M 13 Apr 2019 02:07:28.495 * Background saving terminated with success
+1:M 13 Apr 2019 02:07:28.502 * Synchronization with replica 172.16.238.14:6379 succeeded
