@@ -1,5 +1,5 @@
 
-# redis-cli -a redis --cluster create 37.220.83.153:6379 37.220.83.153:6380 37.220.83.153:6381 37.220.83.153:6382 37.220.83.153:6383 37.220.83.153:6384 --cluster-replicas 1
+# redis-cli -a redis --cluster create 127.0.0.1:6379 redis2:6380 redis3:6381 redis4:6382 redis5:6383 redis6:6384 --cluster-replicas 1
 version: '3'
 services:
   # 节点1
@@ -15,6 +15,8 @@ services:
     ports:
       - ${redis1_ports}
       - ${redis1_cluster}
+    networks:
+      - cluster-net
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis1_port}/data:/data
@@ -36,6 +38,8 @@ services:
     ports:
       - ${redis2_ports}
       - ${redis2_cluster}
+    networks:
+      - cluster-net
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis2_port}/data:/data
@@ -57,6 +61,8 @@ services:
     ports:
       - ${redis3_ports}
       - ${redis3_cluster}
+    networks:
+      - cluster-net
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis3_port}/data:/data
@@ -78,6 +84,8 @@ services:
     ports:
       - ${redis4_ports}
       - ${redis4_cluster}
+    networks:
+      - cluster-net
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis4_port}/data:/data
@@ -99,6 +107,8 @@ services:
     ports:
       - ${redis5_ports}
       - ${redis5_cluster}
+    networks:
+      - cluster-net
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis5_port}/data:/data
@@ -120,6 +130,8 @@ services:
     ports:
       - ${redis6_ports}
       - ${redis6_cluster}
+    networks:
+      - cluster-net
     volumes:
       # 容器的data映射到宿主机
       - /Users/g5niusx/Soft/docker/redis/node-${redis6_port}/data:/data
@@ -130,4 +142,6 @@ services:
     environment:
       # 设置时区为上海，否则时间会有问题
       - TZ=Asia/Shanghai
-    network_mode: host
+networks:
+  cluster-net:
+    driver: bridge
