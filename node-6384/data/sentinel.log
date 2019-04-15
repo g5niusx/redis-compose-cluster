@@ -1,0 +1,21 @@
+1:X 15 Apr 2019 13:19:16.855 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:X 15 Apr 2019 13:19:16.870 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:X 15 Apr 2019 13:19:16.875 # Configuration loaded
+1:X 15 Apr 2019 13:19:16.883 * Running mode=sentinel, port=26379.
+1:X 15 Apr 2019 13:19:16.888 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:X 15 Apr 2019 13:19:16.904 # Sentinel ID is 268d9548efa46d17b7e89a2816bd2fb934531203
+1:X 15 Apr 2019 13:19:16.908 # +monitor master node-5 172.16.238.15 6379 quorum 2
+1:X 15 Apr 2019 13:19:16.916 # +monitor master node-2 172.16.238.12 6379 quorum 2
+1:X 15 Apr 2019 13:19:16.922 # +monitor master node-6 172.16.238.16 6379 quorum 2
+1:X 15 Apr 2019 13:19:16.927 # +monitor master node-4 172.16.238.14 6379 quorum 2
+1:X 15 Apr 2019 13:19:16.932 # +monitor master node-1 172.16.238.11 6379 quorum 2
+1:X 15 Apr 2019 13:19:16.935 # +monitor master node-3 172.16.238.13 6379 quorum 2
+1:X 15 Apr 2019 13:19:26.979 * +slave slave 172.16.238.15:6379 172.16.238.15 6379 @ node-1 172.16.238.11 6379
+1:X 15 Apr 2019 13:20:16.914 # +sdown master node-5 172.16.238.15 6379
+1:X 15 Apr 2019 13:20:16.918 # +sdown master node-2 172.16.238.12 6379
+1:X 15 Apr 2019 13:20:16.921 # +sdown master node-6 172.16.238.16 6379
+1:X 15 Apr 2019 13:20:16.922 # +sdown master node-4 172.16.238.14 6379
+1:X 15 Apr 2019 13:20:16.924 # +sdown master node-3 172.16.238.13 6379
+1:signal-handler (1555334509) Received SIGTERM scheduling shutdown...
+1:X 15 Apr 2019 13:21:49.702 # User requested shutdown...
+1:X 15 Apr 2019 13:21:49.705 # Sentinel is now ready to exit, bye bye...

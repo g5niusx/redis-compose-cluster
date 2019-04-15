@@ -148,6 +148,18 @@ services:
     environment:
       # 设置时区为上海，否则时间会有问题
       - TZ=Asia/Shanghai
+  sentinel-9001:
+    container_name: sentinel-9001
+    image: 'redis:5.0.4'
+    ports:
+      - 26379:26379
+    networks:
+        cluster-net:
+          ipv4_address: 172.16.238.240
+    volumes:
+      - /Users/g5niusx/Soft/docker/redis/sentinel-9001/data:/data
+      - /Users/g5niusx/Soft/docker/redis/sentinel-9001/sentinel.conf:/usr/local/etc/redis/sentinel.conf
+    command: redis-server /usr/local/etc/redis/sentinel.conf --sentinel
 networks:
   # 创建集群网络，在容器之间通信
   cluster-net:

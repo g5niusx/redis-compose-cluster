@@ -1,0 +1,11 @@
+1:signal-handler (1555334919) Received SIGTERM scheduling shutdown...
+1:X 15 Apr 2019 13:28:39.435 # User requested shutdown...
+1:X 15 Apr 2019 13:28:39.439 # Sentinel is now ready to exit, bye bye...
+1:X 15 Apr 2019 13:30:03.671 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:X 15 Apr 2019 13:30:03.675 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:X 15 Apr 2019 13:30:03.679 # Configuration loaded
+1:X 15 Apr 2019 13:30:03.688 * Running mode=sentinel, port=26379.
+1:X 15 Apr 2019 13:30:03.692 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:X 15 Apr 2019 13:30:03.712 # Sentinel ID is 992b1db04a9fb79ae7a8870cd381db8a7e307fcb
+1:X 15 Apr 2019 13:30:03.723 # +monitor master master 172.16.238.11 6379 quorum 2
+1:X 15 Apr 2019 13:30:13.761 * +slave slave 172.16.238.15:6379 172.16.238.15 6379 @ master 172.16.238.11 6379

@@ -48,3 +48,344 @@
 1:S 13 Apr 2019 02:07:28.403 * Background AOF rewrite terminated with success
 1:S 13 Apr 2019 02:07:28.405 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
 1:S 13 Apr 2019 02:07:28.408 * Background AOF rewrite finished successfully
+1:C 15 Apr 2019 21:11:10.982 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 15 Apr 2019 21:11:10.985 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 15 Apr 2019 21:11:10.988 # Configuration loaded
+1:M 15 Apr 2019 21:11:11.000 * Node configuration loaded, I'm ebf1e481e566b29699ff35bd2934fd4fb257e8c5
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Apr 2019 21:11:11.007 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 15 Apr 2019 21:11:11.015 # Server initialized
+1:M 15 Apr 2019 21:11:11.017 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Apr 2019 21:11:11.024 * Reading RDB preamble from AOF file...
+1:M 15 Apr 2019 21:11:11.027 * Reading the remaining AOF tail...
+1:M 15 Apr 2019 21:11:11.032 * DB loaded from append only file: 0.012 seconds
+1:M 15 Apr 2019 21:11:11.034 * Ready to accept connections
+1:S 15 Apr 2019 21:11:11.038 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 15 Apr 2019 21:11:11.041 # Cluster state changed: ok
+1:S 15 Apr 2019 21:11:12.055 * Connecting to MASTER 172.16.238.12:6379
+1:S 15 Apr 2019 21:11:12.059 * MASTER <-> REPLICA sync started
+1:S 15 Apr 2019 21:11:12.062 * Non blocking connect for SYNC fired the event.
+1:S 15 Apr 2019 21:11:12.065 * Master replied to PING, replication can continue...
+1:S 15 Apr 2019 21:11:12.068 * Trying a partial resynchronization (request bf6068ae64e83eaeb16a0e4fbe3a821b9bc325ff:1).
+1:S 15 Apr 2019 21:11:12.087 * Full resync from master: f1817af74fddfa6ad91e4210d2164f9668af5207:0
+1:S 15 Apr 2019 21:11:12.091 * Discarding previously cached master state.
+1:S 15 Apr 2019 21:11:12.195 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 15 Apr 2019 21:11:12.200 * MASTER <-> REPLICA sync: Flushing old data
+1:S 15 Apr 2019 21:11:12.202 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 15 Apr 2019 21:11:12.206 * MASTER <-> REPLICA sync: Finished with success
+1:S 15 Apr 2019 21:11:12.211 * Background append only file rewriting started by pid 18
+1:S 15 Apr 2019 21:11:12.244 * AOF rewrite child asks to stop sending diffs.
+18:C 15 Apr 2019 21:11:12.247 * Parent agreed to stop sending diffs. Finalizing AOF...
+18:C 15 Apr 2019 21:11:12.250 * Concatenating 0.00 MB of AOF diff received from parent.
+18:C 15 Apr 2019 21:11:12.254 * SYNC append only file rewrite performed
+18:C 15 Apr 2019 21:11:12.256 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 15 Apr 2019 21:11:12.265 * Background AOF rewrite terminated with success
+1:S 15 Apr 2019 21:11:12.268 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 15 Apr 2019 21:11:12.273 * Background AOF rewrite finished successfully
+1:signal-handler (1555334083) Received SIGTERM scheduling shutdown...
+1:S 15 Apr 2019 21:14:43.732 # User requested shutdown...
+1:S 15 Apr 2019 21:14:43.738 * Calling fsync() on the AOF file.
+1:S 15 Apr 2019 21:14:43.743 * Saving the final RDB snapshot before exiting.
+1:S 15 Apr 2019 21:14:43.755 * DB saved on disk
+1:S 15 Apr 2019 21:14:43.761 * Removing the pid file.
+1:S 15 Apr 2019 21:14:43.766 # Redis is now ready to exit, bye bye...
+1:C 15 Apr 2019 21:15:09.548 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 15 Apr 2019 21:15:09.550 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 15 Apr 2019 21:15:09.553 # Configuration loaded
+1:M 15 Apr 2019 21:15:09.561 * Node configuration loaded, I'm ebf1e481e566b29699ff35bd2934fd4fb257e8c5
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Apr 2019 21:15:09.567 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 15 Apr 2019 21:15:09.569 # Server initialized
+1:M 15 Apr 2019 21:15:09.571 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Apr 2019 21:15:09.577 * Reading RDB preamble from AOF file...
+1:M 15 Apr 2019 21:15:09.580 * Reading the remaining AOF tail...
+1:M 15 Apr 2019 21:15:09.588 * DB loaded from append only file: 0.012 seconds
+1:M 15 Apr 2019 21:15:09.593 * Ready to accept connections
+1:S 15 Apr 2019 21:15:09.599 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 15 Apr 2019 21:15:09.601 # Cluster state changed: ok
+1:S 15 Apr 2019 21:15:10.618 * Connecting to MASTER 172.16.238.12:6379
+1:S 15 Apr 2019 21:15:10.621 * MASTER <-> REPLICA sync started
+1:S 15 Apr 2019 21:15:10.624 * Non blocking connect for SYNC fired the event.
+1:S 15 Apr 2019 21:15:10.626 * Master replied to PING, replication can continue...
+1:S 15 Apr 2019 21:15:10.629 * Trying a partial resynchronization (request 0309cb0a39ff505e4c1764fec95997eacaebe640:1).
+1:S 15 Apr 2019 21:15:10.641 * Full resync from master: e16599e94441eee986a8bf42e96dadd615858804:0
+1:S 15 Apr 2019 21:15:10.643 * Discarding previously cached master state.
+1:S 15 Apr 2019 21:15:10.726 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 15 Apr 2019 21:15:10.732 * MASTER <-> REPLICA sync: Flushing old data
+1:S 15 Apr 2019 21:15:10.734 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 15 Apr 2019 21:15:10.738 * MASTER <-> REPLICA sync: Finished with success
+1:S 15 Apr 2019 21:15:10.741 * Background append only file rewriting started by pid 17
+1:S 15 Apr 2019 21:15:10.775 * AOF rewrite child asks to stop sending diffs.
+17:C 15 Apr 2019 21:15:10.778 * Parent agreed to stop sending diffs. Finalizing AOF...
+17:C 15 Apr 2019 21:15:10.780 * Concatenating 0.00 MB of AOF diff received from parent.
+17:C 15 Apr 2019 21:15:10.784 * SYNC append only file rewrite performed
+17:C 15 Apr 2019 21:15:10.786 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 15 Apr 2019 21:15:10.827 * Background AOF rewrite terminated with success
+1:S 15 Apr 2019 21:15:10.832 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 15 Apr 2019 21:15:10.835 * Background AOF rewrite finished successfully
+1:signal-handler (1555334345) Received SIGTERM scheduling shutdown...
+1:S 15 Apr 2019 21:19:05.613 # User requested shutdown...
+1:S 15 Apr 2019 21:19:05.619 * Calling fsync() on the AOF file.
+1:S 15 Apr 2019 21:19:05.624 * Saving the final RDB snapshot before exiting.
+1:S 15 Apr 2019 21:19:05.639 * DB saved on disk
+1:S 15 Apr 2019 21:19:05.644 * Removing the pid file.
+1:S 15 Apr 2019 21:19:05.650 # Redis is now ready to exit, bye bye...
+1:C 15 Apr 2019 21:19:16.226 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 15 Apr 2019 21:19:16.230 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 15 Apr 2019 21:19:16.232 # Configuration loaded
+1:M 15 Apr 2019 21:19:16.239 * Node configuration loaded, I'm ebf1e481e566b29699ff35bd2934fd4fb257e8c5
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Apr 2019 21:19:16.243 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 15 Apr 2019 21:19:16.245 # Server initialized
+1:M 15 Apr 2019 21:19:16.247 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Apr 2019 21:19:16.250 * Reading RDB preamble from AOF file...
+1:M 15 Apr 2019 21:19:16.252 * Reading the remaining AOF tail...
+1:M 15 Apr 2019 21:19:16.254 * DB loaded from append only file: 0.006 seconds
+1:M 15 Apr 2019 21:19:16.255 * Ready to accept connections
+1:S 15 Apr 2019 21:19:16.257 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 15 Apr 2019 21:19:16.259 # Cluster state changed: ok
+1:S 15 Apr 2019 21:19:17.276 * Connecting to MASTER 172.16.238.12:6379
+1:S 15 Apr 2019 21:19:17.279 * MASTER <-> REPLICA sync started
+1:S 15 Apr 2019 21:19:17.282 * Non blocking connect for SYNC fired the event.
+1:S 15 Apr 2019 21:19:17.285 * Master replied to PING, replication can continue...
+1:S 15 Apr 2019 21:19:17.289 * Trying a partial resynchronization (request cf3ef7205d88650f5d831f79e9c844942ab73575:1).
+1:S 15 Apr 2019 21:19:17.303 * Full resync from master: 4c30212e112ffb0075d0561f62524f1ad420090f:0
+1:S 15 Apr 2019 21:19:17.306 * Discarding previously cached master state.
+1:S 15 Apr 2019 21:19:17.319 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 15 Apr 2019 21:19:17.323 * MASTER <-> REPLICA sync: Flushing old data
+1:S 15 Apr 2019 21:19:17.326 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 15 Apr 2019 21:19:17.331 * MASTER <-> REPLICA sync: Finished with success
+1:S 15 Apr 2019 21:19:17.335 * Background append only file rewriting started by pid 19
+1:S 15 Apr 2019 21:19:17.368 * AOF rewrite child asks to stop sending diffs.
+19:C 15 Apr 2019 21:19:17.371 * Parent agreed to stop sending diffs. Finalizing AOF...
+19:C 15 Apr 2019 21:19:17.373 * Concatenating 0.00 MB of AOF diff received from parent.
+19:C 15 Apr 2019 21:19:17.376 * SYNC append only file rewrite performed
+19:C 15 Apr 2019 21:19:17.378 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 15 Apr 2019 21:19:17.383 * Background AOF rewrite terminated with success
+1:S 15 Apr 2019 21:19:17.386 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 15 Apr 2019 21:19:17.389 * Background AOF rewrite finished successfully
+1:signal-handler (1555334509) Received SIGTERM scheduling shutdown...
+1:S 15 Apr 2019 21:21:49.710 # User requested shutdown...
+1:S 15 Apr 2019 21:21:49.715 * Calling fsync() on the AOF file.
+1:S 15 Apr 2019 21:21:49.718 * Saving the final RDB snapshot before exiting.
+1:S 15 Apr 2019 21:21:49.727 * DB saved on disk
+1:S 15 Apr 2019 21:21:49.730 * Removing the pid file.
+1:S 15 Apr 2019 21:21:49.733 # Redis is now ready to exit, bye bye...
+1:C 15 Apr 2019 21:21:59.450 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 15 Apr 2019 21:21:59.452 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 15 Apr 2019 21:21:59.453 # Configuration loaded
+1:M 15 Apr 2019 21:21:59.463 * Node configuration loaded, I'm ebf1e481e566b29699ff35bd2934fd4fb257e8c5
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Apr 2019 21:21:59.471 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 15 Apr 2019 21:21:59.473 # Server initialized
+1:M 15 Apr 2019 21:21:59.475 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Apr 2019 21:21:59.481 * Reading RDB preamble from AOF file...
+1:M 15 Apr 2019 21:21:59.484 * Reading the remaining AOF tail...
+1:M 15 Apr 2019 21:21:59.487 * DB loaded from append only file: 0.010 seconds
+1:M 15 Apr 2019 21:21:59.490 * Ready to accept connections
+1:S 15 Apr 2019 21:21:59.493 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 15 Apr 2019 21:21:59.495 # Cluster state changed: ok
+1:S 15 Apr 2019 21:22:00.522 * Connecting to MASTER 172.16.238.12:6379
+1:S 15 Apr 2019 21:22:00.526 * MASTER <-> REPLICA sync started
+1:S 15 Apr 2019 21:22:00.529 * Non blocking connect for SYNC fired the event.
+1:S 15 Apr 2019 21:22:00.531 * Master replied to PING, replication can continue...
+1:S 15 Apr 2019 21:22:00.534 * Trying a partial resynchronization (request 261e2ad09397e52a625c6545d0ae4aba34fd0cc6:1).
+1:S 15 Apr 2019 21:22:00.549 * Full resync from master: e038d502f7ff0ecd849793114d4a1018b7e9d550:0
+1:S 15 Apr 2019 21:22:00.552 * Discarding previously cached master state.
+1:S 15 Apr 2019 21:22:00.619 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 15 Apr 2019 21:22:00.622 * MASTER <-> REPLICA sync: Flushing old data
+1:S 15 Apr 2019 21:22:00.624 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 15 Apr 2019 21:22:00.629 * MASTER <-> REPLICA sync: Finished with success
+1:S 15 Apr 2019 21:22:00.632 * Background append only file rewriting started by pid 19
+1:S 15 Apr 2019 21:22:00.666 * AOF rewrite child asks to stop sending diffs.
+19:C 15 Apr 2019 21:22:00.668 * Parent agreed to stop sending diffs. Finalizing AOF...
+19:C 15 Apr 2019 21:22:00.671 * Concatenating 0.00 MB of AOF diff received from parent.
+19:C 15 Apr 2019 21:22:00.675 * SYNC append only file rewrite performed
+19:C 15 Apr 2019 21:22:00.677 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 15 Apr 2019 21:22:00.735 * Background AOF rewrite terminated with success
+1:S 15 Apr 2019 21:22:00.738 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 15 Apr 2019 21:22:00.742 * Background AOF rewrite finished successfully
+1:signal-handler (1555334919) Received SIGTERM scheduling shutdown...
+1:S 15 Apr 2019 21:28:39.466 # User requested shutdown...
+1:S 15 Apr 2019 21:28:39.470 * Calling fsync() on the AOF file.
+1:S 15 Apr 2019 21:28:39.474 * Saving the final RDB snapshot before exiting.
+1:S 15 Apr 2019 21:28:39.482 * DB saved on disk
+1:S 15 Apr 2019 21:28:39.490 * Removing the pid file.
+1:S 15 Apr 2019 21:28:39.495 # Redis is now ready to exit, bye bye...
+1:C 15 Apr 2019 21:29:08.859 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 15 Apr 2019 21:29:08.862 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 15 Apr 2019 21:29:08.865 # Configuration loaded
+1:M 15 Apr 2019 21:29:08.878 * Node configuration loaded, I'm ebf1e481e566b29699ff35bd2934fd4fb257e8c5
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Apr 2019 21:29:08.883 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 15 Apr 2019 21:29:08.885 # Server initialized
+1:M 15 Apr 2019 21:29:08.892 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Apr 2019 21:29:08.898 * Reading RDB preamble from AOF file...
+1:M 15 Apr 2019 21:29:08.900 * Reading the remaining AOF tail...
+1:M 15 Apr 2019 21:29:08.904 * DB loaded from append only file: 0.009 seconds
+1:M 15 Apr 2019 21:29:08.905 * Ready to accept connections
+1:S 15 Apr 2019 21:29:08.908 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 15 Apr 2019 21:29:08.910 # Cluster state changed: ok
+1:S 15 Apr 2019 21:29:09.920 * Connecting to MASTER 172.16.238.12:6379
+1:S 15 Apr 2019 21:29:09.924 * MASTER <-> REPLICA sync started
+1:S 15 Apr 2019 21:29:09.927 * Non blocking connect for SYNC fired the event.
+1:S 15 Apr 2019 21:29:09.929 * Master replied to PING, replication can continue...
+1:S 15 Apr 2019 21:29:09.932 * Trying a partial resynchronization (request 87ec17418fb576eaa416c44ab58fea82c876315b:1).
+1:S 15 Apr 2019 21:29:09.945 * Full resync from master: 053e96bccbdf99af0d9e1c896dee7d5c4ccd8d35:0
+1:S 15 Apr 2019 21:29:09.947 * Discarding previously cached master state.
+1:S 15 Apr 2019 21:29:09.963 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 15 Apr 2019 21:29:09.967 * MASTER <-> REPLICA sync: Flushing old data
+1:S 15 Apr 2019 21:29:09.970 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 15 Apr 2019 21:29:09.974 * MASTER <-> REPLICA sync: Finished with success
+1:S 15 Apr 2019 21:29:09.977 * Background append only file rewriting started by pid 17
+1:S 15 Apr 2019 21:29:10.006 * AOF rewrite child asks to stop sending diffs.
+17:C 15 Apr 2019 21:29:10.008 * Parent agreed to stop sending diffs. Finalizing AOF...
+17:C 15 Apr 2019 21:29:10.010 * Concatenating 0.00 MB of AOF diff received from parent.
+17:C 15 Apr 2019 21:29:10.013 * SYNC append only file rewrite performed
+17:C 15 Apr 2019 21:29:10.016 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 15 Apr 2019 21:29:10.028 * Background AOF rewrite terminated with success
+1:S 15 Apr 2019 21:29:10.031 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 15 Apr 2019 21:29:10.033 * Background AOF rewrite finished successfully
+1:signal-handler (1555334994) Received SIGTERM scheduling shutdown...
+1:S 15 Apr 2019 21:29:54.079 # User requested shutdown...
+1:S 15 Apr 2019 21:29:54.085 * Calling fsync() on the AOF file.
+1:S 15 Apr 2019 21:29:54.089 * Saving the final RDB snapshot before exiting.
+1:S 15 Apr 2019 21:29:54.098 * DB saved on disk
+1:S 15 Apr 2019 21:29:54.102 * Removing the pid file.
+1:S 15 Apr 2019 21:29:54.106 # Redis is now ready to exit, bye bye...
+1:C 15 Apr 2019 21:30:03.620 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 15 Apr 2019 21:30:03.622 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 15 Apr 2019 21:30:03.634 # Configuration loaded
+1:M 15 Apr 2019 21:30:03.656 * Node configuration loaded, I'm ebf1e481e566b29699ff35bd2934fd4fb257e8c5
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.4 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 15 Apr 2019 21:30:03.671 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 15 Apr 2019 21:30:03.676 # Server initialized
+1:M 15 Apr 2019 21:30:03.680 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 15 Apr 2019 21:30:03.694 * Reading RDB preamble from AOF file...
+1:M 15 Apr 2019 21:30:03.698 * Reading the remaining AOF tail...
+1:M 15 Apr 2019 21:30:03.703 * DB loaded from append only file: 0.019 seconds
+1:M 15 Apr 2019 21:30:03.708 * Ready to accept connections
+1:S 15 Apr 2019 21:30:03.717 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 15 Apr 2019 21:30:03.722 # Cluster state changed: ok
+1:S 15 Apr 2019 21:30:04.738 * Connecting to MASTER 172.16.238.12:6379
+1:S 15 Apr 2019 21:30:04.742 * MASTER <-> REPLICA sync started
+1:S 15 Apr 2019 21:30:04.745 * Non blocking connect for SYNC fired the event.
+1:S 15 Apr 2019 21:30:04.748 * Master replied to PING, replication can continue...
+1:S 15 Apr 2019 21:30:04.750 * Trying a partial resynchronization (request 4e3431e17354efd15b72e105b4c4435516745a15:1).
+1:S 15 Apr 2019 21:30:04.764 * Full resync from master: 8c65a047318450de30fefaaaea2ef421bb134eb0:0
+1:S 15 Apr 2019 21:30:04.766 * Discarding previously cached master state.
+1:S 15 Apr 2019 21:30:04.869 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 15 Apr 2019 21:30:04.873 * MASTER <-> REPLICA sync: Flushing old data
+1:S 15 Apr 2019 21:30:04.875 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 15 Apr 2019 21:30:04.879 * MASTER <-> REPLICA sync: Finished with success
+1:S 15 Apr 2019 21:30:04.882 * Background append only file rewriting started by pid 17
+1:S 15 Apr 2019 21:30:04.914 * AOF rewrite child asks to stop sending diffs.
+17:C 15 Apr 2019 21:30:04.917 * Parent agreed to stop sending diffs. Finalizing AOF...
+17:C 15 Apr 2019 21:30:04.920 * Concatenating 0.00 MB of AOF diff received from parent.
+17:C 15 Apr 2019 21:30:04.923 * SYNC append only file rewrite performed
+17:C 15 Apr 2019 21:30:04.926 * AOF rewrite: 0 MB of memory used by copy-on-write
+1:S 15 Apr 2019 21:30:04.949 * Background AOF rewrite terminated with success
+1:S 15 Apr 2019 21:30:04.952 * Residual parent diff successfully flushed to the rewritten AOF (0.00 MB)
+1:S 15 Apr 2019 21:30:04.955 * Background AOF rewrite finished successfully
